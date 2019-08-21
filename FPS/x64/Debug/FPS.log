@@ -1,0 +1,12 @@
+﻿  IntroScene.cpp
+d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.h(23): error C3646: 'stTitle': 알 수 없는 재정의 지정자입니다.
+d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.h(23): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.cpp(12): warning C4200: 비표준 확장이 사용됨: 구조체/공용 구조체의 배열 크기가 0입니다.
+  d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.cpp(12): note: 이 멤버는 기본값으로 설정된 생성자 또는 복사/이동 대입 연산자에서 무시됩니다.
+d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.cpp(12): error C2997: 'TitleLogo::TitleMapData': 기본 멤버 이니셜라이저에서 배열 범위를 추론할 수 없습니다.
+  d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.cpp(12): note: 'TitleLogo::TitleMapData' 선언을 참조하십시오.
+d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.cpp(57): error C2065: 'stTitle': 선언되지 않은 식별자입니다.
+  SceneFactory.cpp
+d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.h(23): error C3646: 'stTitle': 알 수 없는 재정의 지정자입니다.
+d:\__programing\2019.8\0821_space_invader\console_invader\fps\introscene.h(23): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  코드를 생성하고 있습니다...

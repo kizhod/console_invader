@@ -1,5 +1,5 @@
 #pragma once
-bclass GameManager
+class GameManager
 {
 public:
 	GameManager();

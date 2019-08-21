@@ -7,6 +7,8 @@
 #include <Windows.h>
 
 #include <string>
+#include <ctime>
+
 #include "vld.h"
 
 #include "Define.h"

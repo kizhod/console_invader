@@ -3,6 +3,5 @@
 class SceneFactory
 {
 public:
-	static class Scene* Make(eScene a_eScene);
+	static class Scene* Make(class SceneManager* a_pParent, eScene a_eScene);
 };
-

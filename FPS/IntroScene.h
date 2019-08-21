@@ -1,7 +1,6 @@
 #pragma once
 #include "Scene.h"
-class IntroScene :
-	public Scene
+class IntroScene : public Scene
 {
 public:
 	IntroScene(SceneManager * a_pParent);
@@ -15,5 +14,12 @@ public:
 	virtual void Render() override;
 
 	virtual void KeyInput(eKey a_eKey) override;
+
+public:
+
+	int MenuSelect = 0;
+	//TitleLogo* pTitle;
+	char TitleMap[16][35] = { 0, };
+	TitleLogo stTitle;
 };
 

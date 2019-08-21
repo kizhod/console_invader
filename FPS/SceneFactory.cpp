@@ -1,18 +1,23 @@
 #include "pch.h"
 #include "SceneFactory.h"
 
-#include "SceneManager.h"
-#include "TestScene.h"
+#include "IntroScene.h"
+#include "GameScene.h"
+#include "GameOverScene.h"
 
-Scene* SceneFactory::Make(eScene a_eScene)
+Scene* SceneFactory::Make(class SceneManager* a_pParent, eScene a_eScene)
 {
-	SceneManager* pParent = SceneMng();
 	Scene* pMakedScene = nullptr;
-
 	switch (a_eScene)
 	{
-	case eScene::TestScene:
-		pMakedScene = new TestScene(pParent);
+	case eScene::IntroScene:
+		pMakedScene = new IntroScene(a_pParent);
+		break;
+	case eScene::GameScene:
+		pMakedScene = new GameScene(a_pParent);
+		break;
+	case eScene::GameOverScene:
+		pMakedScene = new GameOverScene(a_pParent);
 		break;
 	default:
 		assert(false && "arg error");
@@ -21,5 +26,3 @@ Scene* SceneFactory::Make(eScene a_eScene)
 
 	return pMakedScene;
 }
-
-

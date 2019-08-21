@@ -2,11 +2,15 @@
 #include "GameScene.h"
 
 
-GameScene::GameScene()
+GameScene::GameScene(class SceneManager* a_pParent) : Scene(a_pParent)
 {
 }
 
-
 GameScene::~GameScene()
 {
+}
+
+eScene GameScene::GetScene()
+{
+	return eScene::GameScene;
 }

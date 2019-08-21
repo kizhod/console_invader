@@ -2,11 +2,15 @@
 #include "GameOverScene.h"
 
 
-GameOverScene::GameOverScene()
+GameOverScene::GameOverScene(class SceneManager* a_pParent) : Scene(a_pParent)
 {
 }
 
-
 GameOverScene::~GameOverScene()
 {
+}
+
+eScene GameOverScene::GetScene()
+{
+	return eScene::GameOverScene;
 }

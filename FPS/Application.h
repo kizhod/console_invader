@@ -15,7 +15,6 @@ protected:
 	void Render();
 
 private:
-
-	long m_nDeltaTick;
-	long m_nLastStamp = 0;
+	clock_t m_nDeltaTick;
+	clock_t m_nLastStamp = 0;
 };

@@ -6,10 +6,10 @@ public:
 
 private:
 	static inline SceneManager * m_pInstance = nullptr;
-	SceneManager() = default;
+	SceneManager();
 	~SceneManager();
-	
-	SceneManager operator=(SceneManager&) = delete;	
+
+	SceneManager operator=(SceneManager&) = delete;
 	SceneManager(SceneManager&&) = delete;
 	SceneManager(const SceneManager&) = delete;
 
@@ -34,23 +34,26 @@ public:
 	}
 
 public:
-	
+
 	void Init();
 	void ChangeScene(eScene a_eScene);
 
 	void Update(float a_fDeltaTime);
 	void Render();
 
-	static eKey GetKey_withChar(char c);
+	eInputState GetKeyState(eKey a_eKey);
 
 private:
 
 	void KeyCheck();
 
 private:
-	class Scene * m_pNowScene = nullptr;
-};
+	class Scene *	m_pNowScene = nullptr;
 
+	int				m_arrKeys[(int)eKey::Max];
+	int				m_BeforeKeyState[(int)eKey::Max];
+	eInputState		m_KeyState[(int)eKey::Max];
+};
 
 #define InitSceneMng()		{SceneManager::CreateInstance(); SceneManager::GetInstance()->Init();}
 #define SceneMng()			(SceneManager::GetInstance())

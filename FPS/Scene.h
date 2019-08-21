@@ -16,6 +16,18 @@ public:
 	virtual void Render();
 	virtual void KeyInput(eKey a_eKey);
 
+protected:
+
+	inline bool IsKeyDown(eKey a_eKey) const
+	{
+		return m_refParent->GetKeyState(a_eKey) == eInputState::Down;
+	}
+
+	inline bool IsKeyUp(eKey a_eKey) const
+	{
+		return m_refParent->GetKeyState(a_eKey) == eInputState::Up;
+	}
+
 public:
 
 	class SceneManager * m_refParent = nullptr;
