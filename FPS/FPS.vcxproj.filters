@@ -54,9 +54,6 @@
     <ClInclude Include="GameOverScene.h">
       <Filter>Scene\Scene\Sub</Filter>
     </ClInclude>
-    <ClInclude Include="GameManager.h">
-      <Filter>Scene\Object</Filter>
-    </ClInclude>
     <ClInclude Include="Wall.h">
       <Filter>Scene\Object\Sub</Filter>
     </ClInclude>
@@ -84,6 +81,9 @@
     <ClInclude Include="Missile.h">
       <Filter>Scene\Object\Sub</Filter>
     </ClInclude>
+    <ClInclude Include="MapObjectFactory.h">
+      <Filter>Scene\Object</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -109,9 +109,6 @@
     </ClCompile>
     <ClCompile Include="GameScene.cpp">
       <Filter>Scene\Scene\Sub</Filter>
-    </ClCompile>
-    <ClCompile Include="GameManager.cpp">
-      <Filter>Scene\Object</Filter>
     </ClCompile>
     <ClCompile Include="Item.cpp">
       <Filter>Scene\Object\Sub</Filter>
@@ -139,6 +136,9 @@
     </ClCompile>
     <ClCompile Include="Space_Invader.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MapObjectFactory.cpp">
+      <Filter>Scene\Object</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -18,8 +18,8 @@ public:
 public:
 
 	int MenuSelect = 0;
-	//TitleLogo* pTitle;
-	char TitleMap[16][35] = { 0, };
-	TitleLogo stTitle;
+	char TitleMap[16][35];
+	//TitleLogo stTitle;
+	//TitleLogo* pTitle = stTitle;
 };
 

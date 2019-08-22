@@ -68,12 +68,34 @@ enum class eObjectType
 	None = 0,
 	Wall,
 	Block,
-	Item,
+
+	Item = 3,
 	Missile,
 
-	Enemy,
-	Player,
+	Enemy = 5,
+	Player =6,
 };
+
+char GetData(eObjectType a_eObjectType)
+{
+	// obj속성에 따라 화면에 그려질 char값을 return
+	switch (a_eObjectType)
+	{
+	case eObjectType::None: { return ' '; }
+	case eObjectType::Wall: { return 'W'; }break;
+	case eObjectType::Block: { return '~'; }break;
+
+	case eObjectType::Player: { return 'H'; }break;
+	case eObjectType::Enemy: { return 'M'; }break;
+
+	//case eObjectType::Item: { return 'A'; }break;
+
+	//case eObjectType::Portal_Oneway: { return 'P'; }break;
+	}
+
+	assert(false && "arg error");
+	return 0;
+}
 
 enum class eItem
 {
@@ -84,6 +106,33 @@ enum class eItem
 	SpeedUp,
 
 	Max,
+};
+
+struct ST_Result
+{
+	bool bMove = false;
+	std::string sLog;
+
+	void Clear()
+	{
+		bMove = true;
+		sLog = "";
+	}
+};
+
+
+enum eStat
+{
+	HP,
+	Power,
+	Speed,
+};
+
+struct ST_Stat
+{
+	int HP;
+	int Power;
+	int Speed;
 };
 
 enum eGame

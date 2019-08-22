@@ -157,7 +157,7 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Enemy.h" />
-    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="MapObjectFactory.h" />
     <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="IntroScene.h" />
@@ -177,7 +177,7 @@
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Space_Invader.cpp" />
-    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="MapObjectFactory.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="IntroScene.cpp" />
